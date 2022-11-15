@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport"
+            path1tent="width=device-width, 
+                    initial-scale=1.0">   
+</head> 
+<style>
+    h1{
+        line-height: 5px;
+        color: green;
+    }
+    h1, h2, p, h4, h5, h6{
+        background-color: #f2f2f2;
+        padding:20px;
+        width: 300px;
+        line-height: 5px;
+    }
+    p:hover{
+        background-color: grey;
+        cursor: pointer;
+    }
+    div{
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        margin:10px;
+    }
+</style> 
+<body>  
+    
+    <p>Click me.</p>
+    <p>Click me.</p>
+  <script src = 
+"https://d3js.org/d3.v4.min.js"> 
+  </script>
+  <script> 
+  function func(){
+            // Selecting  p and
+            // Appending a DIV to the p tag
+            // Only first p tag is effected
+            var chk = d3.select("p")
+                        .append("b");
+            var b=document.querySelector("b");
+            b.innerText=" This <b> tag is appended."
+        }
+    let btn=document.querySelector("p");
+    btn.addEventListener("click", func);
+  
+  </script> 
+</body> 
+</html>
